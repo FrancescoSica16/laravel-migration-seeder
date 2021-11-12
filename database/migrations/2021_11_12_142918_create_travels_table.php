@@ -18,7 +18,7 @@ class CreateTravelsTable extends Migration
             $table->string('location',50);
             $table->date('date_start');
             $table->date('date_end');
-            $table->float('price');
+            $table->float('price', 4 , 2);
             $table->string('slug',100);
             $table->timestamps();
         });
